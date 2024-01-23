@@ -1,5 +1,6 @@
 import { Callout } from '@/components/Callout';
 import { QuickLink, QuickLinks } from '@/components/QuickLinks';
+import { Button } from '@/components/Button';
 
 const tags = {
 
@@ -46,6 +47,29 @@ const tags = {
       href: { type: String },
     },
   },
+
+  button: {
+    selfClosing: false,
+    render: ({ children, variant, className, ...props }) => (
+      <Button className={className} variant={variant} {...props}>
+        {children}
+      </Button>
+    ),
+    attributes: {
+      variant: {
+        type: String,
+        default: 'primary',
+      },
+      className: {
+        type: String,
+        default: '',
+      },
+      href: {
+        type: String,
+        default: undefined,
+      }
+    }
+  }
 
   /*
    * use in templates as {% bom: type="BOM" /%}

@@ -5,11 +5,8 @@ title: Getting started
 Configure your toolhead of choice {% .lead %}
 
 {% quick-links %}
-
-{% quick-link title="Installation" icon="installation" href="/" description="Step-by-step guides to installing your Archetype" /%}
-
-{% quick-link title="PDF" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
-
+  {% quick-link title="Installation" icon="installation" href="/docs/components/core" description="Step-by-step guides to installing your Archetype" /%}
+  {% quick-link title="Configurator" icon="presets" href="/configurator" description="Generate your parts list for printing" /%}
 {% /quick-links %}
 
 ---
