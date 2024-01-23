@@ -1,0 +1,5 @@
+---
+title: Core Installation
+---
+
+## BOM
