@@ -44,7 +44,7 @@ export function Hero () {
           <Image src={mantis} alt="Mantis" priority height={320} />
         </div>
         <div>
-          <Image src={mjolnir} alt="Mjolnir" priority height={320} />
+          <Image src={mjolnir} alt="Mjölnir" priority height={320} />
         </div>
         <div>
           <Image src={zephyr} alt="Zephyr" priority height={320} />

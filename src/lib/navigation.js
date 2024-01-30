@@ -61,7 +61,36 @@ export const navigation = [
           },
         ],
       },
-      { title: 'Ducts', href: '/docs/components/ducts' },
+      {
+        title: 'Ducts',
+        href: '/docs/components/ducts',
+        links: [
+          {
+            title: 'Atrocity',
+            href: '/docs/components/ducts/atrocity',
+          },
+          {
+            title: 'Blackbird',
+            href: '/docs/components/ducts/blackbird',
+          },
+          {
+            title: 'Breakneck',
+            href: '/docs/components/ducts/breakneck',
+          },
+          {
+            title: 'Mantis',
+            href: '/docs/components/ducts/mantis',
+          },
+          {
+            title: 'Mjölnir',
+            href: '/docs/components/ducts/mjolnir',
+          },
+          {
+            title: 'Zephyr',
+            href: '/docs/components/ducts/Zephyr',
+          },
+        ],
+      },
       { title: 'Probes', href: '/docs/components/probes' },
     ],
   },

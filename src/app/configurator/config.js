@@ -176,7 +176,7 @@ export const Archetype = {
         //   },
         // },
         mjolnir: {
-          label: 'Mjolnir',
+          label: 'Mjölnir',
           files: {
             generic: {
               cover: 'Archetype - Mjolnir/Fan Covers/[a]_mjolnir_fan_cover',
