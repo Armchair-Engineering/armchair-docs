@@ -9,8 +9,58 @@ export const navigation = [
     title: 'Components',
     links: [
       { title: 'Core', href: '/docs/components/core' },
-      { title: 'Hotends', href: '/docs/components/hotends' },
-      { title: 'Extruders', href: '/docs/components/extruders' },
+      {
+        title: 'Hotends',
+        href: '/docs/components/hotends',
+        links: [
+          {
+            title: 'Chube',
+            href: '/docs/components/hotends/chube',
+          },
+          {
+            title: 'Goliath',
+            href: '/docs/components/hotends/goliath',
+          },
+          {
+            title: 'Dragon UHF',
+            href: '/docs/components/hotends/dragon_uhf',
+          },
+          {
+            title: 'VolcMosq / NF Crazy / Mosquito',
+            href: '/docs/components/hotends/volcmosq',
+          },
+          {
+            title: 'Rapido UHF',
+            href: '/docs/components/hotends/rapido_uhf',
+          },
+        ],
+      },
+      {
+        title: 'Extruders',
+        href: '/docs/components/extruders',
+        links: [
+          {
+            title: 'Bowden',
+            href: '/docs/components/extruders/bowden',
+          },
+          {
+            title: 'Oribiter 2',
+            href: '/docs/components/extruders/orbiter2',
+          },
+          {
+            title: 'Sherpa Micro',
+            href: '/docs/components/extruders/sherpa_micro',
+          },
+          {
+            title: 'Sherpa Mini',
+            href: '/docs/components/extruders/sherpa_mini',
+          },
+          {
+            title: 'VZ HextrudORT',
+            href: '/docs/components/extruders/vz_hextrudort',
+          },
+        ],
+      },
       { title: 'Ducts', href: '/docs/components/ducts' },
       { title: 'Probes', href: '/docs/components/probes' },
     ],

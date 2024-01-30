@@ -9,95 +9,24 @@ Each hotend mount requires the following
 - 1x 2510 Axial Fan
 - 4x M2.5x16 SHCS
 
-Below you will find the individual requirements of each hotend
+You will find the individual requirements of each hotend on their respective page.
 
 ## Assembly
+Most hotends are assembled the same, with the only variations typically being
+the length of the screw securing the hotend to the mount. You may find links to
+individual assembly instructions below, or use the video for generic assembly.
 
-### Video
-
-### Step by Step
+### Video Guide
+{% video src="/videos/hotend_assy.mp4" /%}
 
 ---
 
-## Chube
+## Hotend Specific Guides
 
-{% callout type="warning" %} Archetype only supports the Air version of this hotend. {% /callout %}
-
-### BOM
-
-- 1x Air Chube
-- 6x M3x12 SHCS
-
-## Goliath
-
-{% callout %}You will need to carefully flex the metal heater wires, see examples below.{% /callout %}
-
-### BOM
-
-- 1x Goliath Air or Water
-- 4x M2.5x8 SHCS
-
-## Dragon UHF
-
-### BOM
-
-- 1x Dragon UHF
-- 4x M2.5x8 SHCS
-
-## VolqMosq
-
-### BOM
-
-- 1x VolqMosq
-- 2x M2.5x6 SHCS
-
-## Rapido UHF
-
-### BOM
-
-- 1x Rapido UHF
-- 4x M2.5x8 SHCS
-
-## Dragon SF/HF
-
-{% callout type="warning" %}This requires a meltzone extender{% /callout %}
-
-### BOM
-
-- 1x Dragon SF/HF
-- 4x M2.5x8 SHCS
-
-## Mosquito / NF Crazy
-
-### BOM
-
-- 1x Mosquito or NF Crazy
-- 2x M2.5x6 SHCS
-
-[//]: # (## Revo Voron)
-
-[//]: # (### BOM)
-
-[//]: # ()
-
-[//]: # (## Dragon NextG)
-
-[//]: # (### BOM)
-
-[//]: # ()
-
-[//]: # (## DropEffect XG)
-
-[//]: # (### BOM)
-
-[//]: # ()
-
-[//]: # (## NextG)
-
-[//]: # (### BOM)
-
-[//]: # ()
-
-[//]: # (## Bambu)
-
-[//]: # (### BOM)
+{% quick-links %}
+    {% quick-link title="Chube" icon="nozzle" href="/docs/components/hotends/chube" description="Luke's Laboratory - Chube" /%}
+    {% quick-link title="Goliath" icon="nozzle" href="/docs/components/hotends/goliath" description="VZ - Goliath" /%}
+    {% quick-link title="Dragon UHF" icon="nozzle" href="/docs/components/hotends/dragon_uhf" description="Phaetus - Dragon UHF/HF/SF" /%}
+    {% quick-link title="VolcMosq" icon="nozzle" href="/docs/components/hotends/volcmosq" description="VolcMosq / MF Crazy / Mosquito" /%}
+    {% quick-link title="Rapido UHF" icon="nozzle" href="/docs/components/hotends/rapido_uhf" description="Phaetus - Rapido UHF" /%}
+{% quick-links /%}

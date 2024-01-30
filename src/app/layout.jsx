@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google'
+import { Chakra_Petch, Inter } from 'next/font/google';
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 
@@ -20,6 +20,13 @@ const lexend = localFont({
   variable: '--font-lexend',
 })
 
+const chakra = Chakra_Petch({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: '500',
+  variable: '--font-chakra',
+})
+
 export const metadata = {
   title: {
     template: '%s - Docs',
@@ -32,7 +39,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={clsx('h-full antialiased', inter.variable, lexend.variable)}
+      className={clsx('h-full antialiased', inter.variable, lexend.variable, chakra.variable)}
       suppressHydrationWarning
     >
       <body className="flex min-h-full bg-white dark:bg-slate-900">

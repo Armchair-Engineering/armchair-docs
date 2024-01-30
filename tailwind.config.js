@@ -24,6 +24,7 @@ module.exports = {
       fontFamily: {
         sans: 'var(--font-inter)',
         display: ['var(--font-lexend)', { fontFeatureSettings: '"ss01"' }],
+        heading: 'var(--font-chakra)'
       },
       maxWidth: {
         '8xl': '88rem',

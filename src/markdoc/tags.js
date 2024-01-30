@@ -33,6 +33,18 @@ const tags = {
     ),
   },
 
+  video: {
+    selfClosing: true,
+    attributes: {
+      src: { type: String },
+    },
+    render: ({ src }) => (
+      <video controls loop>
+        <source src={src} type={`video/${src.replace(/.*\.(.*)/g, '$1')}`} />
+      </video>
+    ),
+  },
+
   'quick-links': {
     render: QuickLinks,
   },

@@ -2,14 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import { navigation } from '@/lib/navigation'
-import { Chakra_Petch } from 'next/font/google';
 import clsx from 'clsx';
-
-const chakra = Chakra_Petch({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: '500'
-})
 
 export function DocsHeader({ title }) {
   let pathname = usePathname()
@@ -29,7 +22,7 @@ export function DocsHeader({ title }) {
         </p>
       )}
       {title && (
-        <h1 className={clsx(chakra.className, 'font-display text-3xl tracking-tight text-slate-900 dark:text-white')}>
+        <h1 className={clsx('font-heading text-3xl tracking-tight text-slate-900 dark:text-white')}>
           {title}
         </h1>
       )}

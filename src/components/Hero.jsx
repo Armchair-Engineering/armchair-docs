@@ -1,19 +1,12 @@
 import Image from 'next/image';
 import clsx from 'clsx';
 
-import { Chakra_Petch } from 'next/font/google';
 import atrocity from '../../public/atrocity.png';
 import blackbird from '../../public/blackbird.png';
 import breakneck from '../../public/breakneck.png';
 import mantis from '../../public/mantis.png';
 import mjolnir from '../../public/mjolnir.png';
 import zephyr from '../../public/zephyr.png';
-
-const chakra = Chakra_Petch({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: '500'
-});
 
 const gradient = `linear-gradient(
   90deg,
@@ -35,7 +28,7 @@ export function Hero () {
   return (
     <div className={clsx('flex flex-col gap-8')}>
       <div className={clsx('w-full text-center lg:text-9xl text-7xl')}>
-        <h1 className={clsx(chakra.className)}>Archetype</h1>
+        <h1 className={clsx('font-heading')}>Archetype</h1>
       </div>
       <div className={clsx('flex flex-row items-center gap-4 justify-between')}>
         <div>
@@ -60,8 +53,8 @@ export function Hero () {
       <div className={clsx('h-4')} style={{ backgroundImage: gradient }}>
 
       </div>
-      <div className={clsx('w-full text-center lg:text-5xl text-4xl', chakra.className)}>
-        <p>You wanted fan options?</p>
+      <div className={clsx('w-full text-center lg:text-5xl text-4xl')}>
+        <h2 className="font-heading">You wanted fan options?</h2>
       </div>
     </div>
   );

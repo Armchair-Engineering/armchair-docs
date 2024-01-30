@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { Icon } from '@/components/Icon';
+import { Fragment } from 'react';
 
 const styles = {
   note: {
@@ -30,7 +31,7 @@ export function Callout ({ title, children, type = 'note' }) {
           <p className={clsx('m-0 font-display text-xl mb-2.5', styles[type].title)}>
             {title}
           </p>
-        ) : <></>
+        ) : <Fragment></Fragment>
         }
         <div className={clsx('prose', styles[type].body)}>
           {children}
