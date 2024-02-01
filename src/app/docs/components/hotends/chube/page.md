@@ -1,5 +1,5 @@
 ---
-title: Luke's Laboratory - Chube
+title: Chube - Waterheater
 ---
 
 ## Overview

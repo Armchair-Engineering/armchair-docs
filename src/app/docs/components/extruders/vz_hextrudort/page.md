@@ -7,11 +7,7 @@ title: Mellow x VZ - HextrudORT
 This extruder is compatible with both Breakneck and Flat style mounts, it has been split into two sections.
 {% /callout %}
 
----
-## Breakneck Mounting
-{% callout type="warning" %}
-This extruder is only compatible with Breakneck
-{% /callout %}
+## Micro-bowden Mount
 
 ### BOM
 
@@ -47,7 +43,7 @@ you may secure the extruder to the block.
 ## Flat Mount
 
 {% callout type="warning" %}
-This extruder is not compatible with Breakneck
+This variant is not compatible with Breakneck
 {% /callout %}
 
 ### BOM

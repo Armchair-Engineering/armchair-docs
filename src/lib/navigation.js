@@ -9,6 +9,7 @@ export const navigation = [
     title: 'Components',
     links: [
       { title: 'Core', href: '/docs/components/core' },
+      { title: 'Probes', href: '/docs/components/probes' },
       {
         title: 'Hotends',
         href: '/docs/components/hotends',
@@ -30,7 +31,7 @@ export const navigation = [
             href: '/docs/components/hotends/volcmosq',
           },
           {
-            title: 'Rapido UHF',
+            title: 'Rapido',
             href: '/docs/components/hotends/rapido_uhf',
           },
         ],
@@ -44,7 +45,7 @@ export const navigation = [
             href: '/docs/components/extruders/bowden',
           },
           {
-            title: 'Oribiter 2',
+            title: 'Orbiter 2',
             href: '/docs/components/extruders/orbiter2',
           },
           {
@@ -91,7 +92,6 @@ export const navigation = [
           },
         ],
       },
-      { title: 'Probes', href: '/docs/components/probes' },
     ],
   },
   {

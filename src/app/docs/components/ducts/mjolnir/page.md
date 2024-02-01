@@ -17,11 +17,11 @@ title: Armchair Engineering - Mjölnir
 ### Assembly
 
 #### Heatsets
-Install the heatsets into the blower fans
+Install the heatsets into the blower fans.
 {% figure src="/archetypes/mjolnir/[h]_archetype_mjolnir.png" /%}
 
 #### Install the fans
-Hold the blowers in position, and secure to the duct with 2x M3x16 BHCS
+Hold the blowers in position, and secure to the duct with 2x M3x16 BHCS.
 {% figure src="/archetypes/mjolnir/archetype_mjolnir_5015_a.png" /%}
 {% figure src="/archetypes/mjolnir/archetype_mjolnir_5015_b.png" /%}
 

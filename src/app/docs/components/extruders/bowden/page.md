@@ -4,10 +4,6 @@ title: Bowden
 
 ## Overview
 
-{% callout type="warning" %}
-This extruder is not compatible with Breakneck
-{% /callout %}
-
 ### BOM
 
 - Bowden tube
@@ -25,7 +21,7 @@ None
 {% figure src="/extruders/flat/bowden/extruder_flat_bowden_square_nut_b.png" /%}
 
 #### Press-Fit ECAS Fitting
-This collect is press fit
+This collet is press fit.
 
 {% figure src="/extruders/flat/bowden/extruder_flat_bowden_collet_a.png" /%}
 {% figure src="/extruders/flat/bowden/extruder_flat_bowden_collet_b.png" /%}

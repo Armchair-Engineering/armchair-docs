@@ -4,10 +4,6 @@ title: Orbiter Projects - Orbiter 2
 
 ## Overview
 
-{% callout type="warning" %}
-This extruder is only compatible with Breakneck
-{% /callout %}
-
 ### BOM
 
 - Bowden tube
