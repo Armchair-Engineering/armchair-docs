@@ -40,7 +40,7 @@ const tags = {
     },
     render: ({ src }) => (
       <video controls loop>
-        <source src={src} type={`docs/video/${src.replace(/.*\.(.*)/g, '$1')}`} />
+        <source src={src} type={`video/${src.replace(/.*\.(.*)/g, '$1')}`} />
       </video>
     ),
   },
