@@ -86,10 +86,10 @@ export const navigation = [
             title: 'Mjölnir',
             href: '/docs/components/ducts/mjolnir',
           },
-          {
-            title: 'Zephyr',
-            href: '/docs/components/ducts/Zephyr',
-          },
+          // {
+          //   title: 'Zephyr',
+          //   href: '/docs/components/ducts/Zephyr',
+          // },
         ],
       },
     ],
