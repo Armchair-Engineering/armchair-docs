@@ -131,6 +131,7 @@ export const Archetype = {
           },
           lengths: [3],
           fitment: 1,
+          spacer: true,
         },
         blackbird: {
           label: 'Blackbird',
@@ -202,6 +203,7 @@ export const Archetype = {
           },
           lengths: [2, 3],
           fitment: 1,
+          spacer: true,
         },
         zephyr: {
           label: 'Zephyr',
@@ -342,7 +344,18 @@ export const Archetype = {
           },
         },
       },
-      mods: {},
+      mods: {
+        spacer: {
+          label: 'Probe Spacer',
+          files: {
+            spacer: {
+              generic: {
+                spacer: 'Archetype Core/Probes/[a]_fan_splitter_spacer',
+              },
+            },
+          },
+        },
+      },
     },
   }
 };
