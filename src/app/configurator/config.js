@@ -18,7 +18,7 @@ export const Archetype = {
             generic: {
               left: 'Archetype Core/Rail Mount/MGN9/mgn9_left',
               right: 'Archetype Core/Rail Mount/MGN9/mgn9_right',
-              clip: 'Archetype Core/Rail Mount/[a]_belt_clamp_x2'
+              clip: 'Archetype Core/Rail Mount/[a]_belt_clamp_pair'
             },
           }
         },
@@ -28,7 +28,7 @@ export const Archetype = {
             generic: {
               left: 'Archetype Core/Rail Mount/MGN12/mgn12_left',
               right: 'Archetype Core/Rail Mount/MGN12/mgn12_right',
-              clip: 'Archetype Core/Rail Mount/[a]_belt_clamp_x2',
+              clip: 'Archetype Core/Rail Mount/[a]_belt_clamp_pair',
             },
           },
         },
@@ -39,7 +39,7 @@ export const Archetype = {
           files: {
             mgn12h: {
               generic: {
-                clip: 'Archetype Core/Rail Mount/MGN12/CPC Rail Only/[a]_cpc_mgn12_belt_clamp_x2',
+                clip: 'Archetype Core/Rail Mount/MGN12/CPC Rail Only/[a]_cpc_mgn12_belt_clamp_pair',
               },
             }
           }

@@ -18,7 +18,7 @@ Once you have chosen your desired configuration, follow the Installation guide b
 
 ## Full BOM
 
-BOM LINK HERE
+You can find the latest BOM [HERE](https://docs.google.com/spreadsheets/d/18x7pNYz53fPJomdPaFnqmAoJtb4nF-udBhEBqGI2xig/edit?usp=sharing)
 
 ## Build Flow
 
