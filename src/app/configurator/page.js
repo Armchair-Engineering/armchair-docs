@@ -25,9 +25,17 @@ const getLength = (length) => {
 
 const BASE_URI = 'https://raw.githubusercontent.com/Armchair-Engineering/Archetype/Experimental'
 
-const getSelectedFiles = (selections, mods) => {
+const getSelectedFiles = (selections, mods, useSpacer) => {
   const files = []
-  let length = getLength(Archetype.components.hotends.options[selections.hotends].length)
+  let length = Archetype.components.hotends.options[selections.hotends].length;
+
+  // special logic for spacer ducts
+  if (useSpacer) {
+    length -= 1;
+    files.push(Archetype.components.probes.mods.spacer.files.spacer.generic.spacer)
+  }
+
+  length = getLength(length);
 
   Object.keys(selections).forEach((type) => {
     const definition = Archetype.components[type].options[selections[type]];
@@ -36,6 +44,7 @@ const getSelectedFiles = (selections, mods) => {
     if (isset(definition.files, 'generic')) {
       const generics = definition.files.generic
 
+      // check for mods
       Object.keys(definition.files.generic).forEach((component_type) => {
         if (isset(mods, type) && mods[type] !== null && isset(Archetype.components[type].mods[mods[type]].files[selected].generic, component_type)) {
           generics[component_type] = Archetype.components[type].mods[mods[type]].files[selected].generic[component_type]
@@ -63,9 +72,7 @@ const downloadBlob = (blob, name) => {
   URL.revokeObjectURL(link.href);
 };
 
-const download = async (selections, mods) => {
-  const files = getSelectedFiles(selections, mods)
-
+const download = async (files) => {
   const downloads = files.map((file) => fetch(`${BASE_URI}/${file}.stl`));
   const responses = await Promise.all(downloads);
 
@@ -82,6 +89,7 @@ export default function Page () {
   const [mods, setMods] = useState({});
   const [length, setLength] = useState(null);
   const [fitment, setFitment] = useState(null);
+  const [useSpacer, setUseSpacer] = useState(false);
 
   // find any components with length restrictions
   useEffect(
@@ -189,8 +197,13 @@ export default function Page () {
                           [name]: component_name
                         });
 
+                        console.log(Archetype.components[name].options[component_name]);
                         if (isset(Archetype.components[name].options[component_name], 'length')) {
                           setLength(Archetype.components[name].options[component_name].length)
+                        }
+
+                        if (isset(Archetype.components[name].options[component_name], 'spacer')) {
+                          setUseSpacer(Archetype.components[name].options[component_name].spacer)
                         }
 
                         if (isset(Archetype.components[name].options[component_name], 'fitment')) {
@@ -264,7 +277,7 @@ export default function Page () {
               'rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm',
               Object.keys(selections).length !== Object.keys(Archetype.components).length ? 'bg-indigo-950 cursor-not-allowed' : 'bg-indigo-500 hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500'
             )}
-            onClick={() => { download(selections, mods) }}
+            onClick={() => { download(getSelectedFiles(selections, mods, useSpacer)) }}
           >
             Download
           </button>
