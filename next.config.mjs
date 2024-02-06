@@ -6,7 +6,7 @@ const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
   pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
-  basePath: '/armchair-docs/docs'
+  basePath: '/armchair-docs'
 };
 
 export default withSearch(

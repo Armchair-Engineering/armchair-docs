@@ -3,7 +3,6 @@ import { QuickLink, QuickLinks } from '@/components/QuickLinks';
 import { Button } from '@/components/Button';
 
 const tags = {
-
   callout: {
     attributes: {
       title: { type: String },
@@ -27,7 +26,7 @@ const tags = {
     render: ({ src, alt = '', caption }) => (
       <figure>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={src} alt={alt} />
+        <img src={`docs/${src}`} alt={alt} />
         <figcaption>{caption}</figcaption>
       </figure>
     ),
@@ -40,7 +39,7 @@ const tags = {
     },
     render: ({ src }) => (
       <video controls loop>
-        <source src={src} type={`video/${src.replace(/.*\.(.*)/g, '$1')}`} />
+        <source src={`docs/${src}`} type={`video/${src.replace(/.*\.(.*)/g, '$1')}`} />
       </video>
     ),
   },
