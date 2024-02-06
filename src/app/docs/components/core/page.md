@@ -7,7 +7,7 @@ title: Core Installation
 ---
 
 ## Heatsets
-Prepare your left and right carriage blocks by first placing the heatsets as illustrated below
+Prepare your left and right carriage blocks by first placing the heatsets as illustrated below.
 
 ### Hardware
 - 6x M3x5x4 Heatset Inserts
@@ -31,16 +31,16 @@ Prepare your left and right carriage blocks by first placing the heatsets as ill
 {% video src="/videos/core_assemble.mp4" /%}
 
 ### Step By Step
-Position the carriage blocks over the holes on the rail carriage
+Position the carriage blocks over the holes on the rail carriage.
 
-{% figure src="/core/core_carriage_a.png" caption="place blocks on the carriage and align the holes" /%}
+{% figure src="/core/core_carriage_a.png" caption="Place blocks on the carriage and align the holes." /%}
 
 Insert the 4 M3x6 SHCS through the cores into the carriage.
 {% figure src="/core/core_carriage_m3x6_a.png" /%}
 {% figure src="/core/core_carriage_m3x6_b.png" /%}
 
 #### Optional Rigid Mounts
-Insert 2 M3x16 FHCS with M5 washers on the back to stabilize to the carriage
+Insert 2 M3x16 FHCS with M5 washers on the back to stabilize to the carriage.
 {% figure src="/core/core_carriage_rigid_mount_m3x16_a.png" /%}
 {% figure src="/core/core_carriage_rigid_mount_m3x16_b.png" /%}
 
@@ -50,7 +50,7 @@ Insert 2 M3x16 FHCS with M5 washers on the back to stabilize to the carriage
 
 ### Hardware
 - 2x Belt tubes
-- 2x m3x45 Belt pins of choice (pin or screw)
+- 2x M3x45 Belt pins of choice (pin or screw)
 
 ### Video Guide
 Soon™
@@ -58,10 +58,10 @@ Soon™
 ### Step by Step
 Your belts should be routed through your gantry at this point, now we're going to install the belt clips.
 
-- pull your belt through the belt clips
-- make a loop and pinch together so that the teeth are locking together
-- pull the belt back through the same hole in the clip
-- leave enough slack in the previous step, and slide the 4mm OD tubes through the opening of the loop and through the centre of the clip
+- Pull your belt through the belt clips.
+- Make a loop and pinch together so that the teeth are locking together.
+- Pull the belt back through the same hole in the clip.
+- Leave enough slack in the previous step, and slide the 4mm OD .tubes through the opening of the loop and through the centre of the clip.
 
 {% figure src="/core/core_carriage_belt_clips_tube_a.png" /%}
 {% figure src="/core/core_carriage_belt_clips_tube_b.png" /%}

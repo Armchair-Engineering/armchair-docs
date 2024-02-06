@@ -44,23 +44,13 @@ export const Archetype = {
             }
           }
         },
-        cpclf: {
-          label: 'CPC Carriage (looser fit)',
-          files: {
-            mgn12h: {
-              generic: {
-                clip: 'Archetype Core/Rail Mount/MGN12/CPC Rail Only/[a]_cpc_mgn12_belt_clamp_x2_loosest',
-              },
-            }
-          }
-        },
       }
     },
     hotends: {
       label: 'Hotend',
       options: {
         chube: {
-          label: 'Luke\'s Laboratory Chube',
+          label: 'Chube - Waterheater',
           files: {
             generic: {
               _: 'Archetype Core/Hotend Mounts/chube_mount'
@@ -77,11 +67,29 @@ export const Archetype = {
           },
           length: 3,
         },
+        rapido_hf: {
+          label: 'Rapido HF',
+          files: {
+            generic: {
+              _: 'Archetype Core/Hotend Mounts/rapido_mount'
+            },
+          },
+          length: 1,
+        },
         rapido_uhf: {
           label: 'Rapido UHF',
           files: {
             generic: {
               _: 'Archetype Core/Hotend Mounts/rapido_mount'
+            },
+          },
+          length: 2,
+        },
+        dragon_uhfmini: {
+          label: 'Dragon UFH Mini',
+          files: {
+            generic: {
+              _: 'Archetype Core/Hotend Mounts/dragon_uhf_mount'
             },
           },
           length: 1,
@@ -93,7 +101,7 @@ export const Archetype = {
               _: 'Archetype Core/Hotend Mounts/dragon_uhf_mount'
             },
           },
-          length: 1,
+          length: 2,
         },
         volqmosq: {
           label: 'VolqMosq',
@@ -121,7 +129,7 @@ export const Archetype = {
               holder_right: 'Archetype - Atrocity/atrocity_holder_right',
             },
           },
-          lengths: [2, 3],
+          lengths: [3],
           fitment: 1,
         },
         blackbird: {
@@ -224,37 +232,37 @@ export const Archetype = {
       label: 'Extruder',
       options: {
         sherpa_micro: {
-          label: 'Annex Engineering Sherpa Micro',
+          label: 'Annex Sherpa Micro - Micro-bowden',
           files: {
             generic: {
               _: 'Archetype Core/Extruders/Breakneck Blocks/[a]_microbowden_micro-sherpa' },
             },
-          fitments: [2],
+          fitments: [1, 2],
         },
-        vz_hextrudort_low: {
-          label: 'Vz Hextrudort Low',
+        sherpa_mini: {
+          label: 'Annex Sherpa Mini - Flat-top',
           files: {
             generic: {
-              _: 'Archetype Core/Extruders/Breakneck Blocks/[a]_microbowden_vz-hextrudort' },
+              _: 'Archetype Core/Extruders/[a]_flat_sherpa_mini' },
             },
-          fitments: [2],
+          fitments: [1],
         },
         orbiter_2: {
-          label: 'LDO Orbiter 2',
+          label: 'Orbiter 2 - Micro-bowden',
           files: {
             generic: {
               _: 'Archetype Core/Extruders/Breakneck Blocks/[a]_microbowden_orbiter2' },
             },
-          fitments: [2],
-        },
-        kyro: {
-          label: 'Armchair Engineering Kyro',
-          files: {
-            generic: {
-              _: 'Archetype Core/Extruders/Breakneck Blocks/[a]_integrated_kyro' },
-            },
           fitments: [1, 2],
         },
+        // kyro: {
+        //   label: 'Armchair Engineering Kyro',
+        //   files: {
+        //     generic: {
+        //       _: 'Archetype Core/Extruders/Breakneck Blocks/[a]_integrated_kyro' },
+        //     },
+        //   fitments: [1, 2],
+        // },
         // escapement: {
         //   label: 'Armchair Engineering Escapement',
         //   files: { generic: { _: 'Archetype Core/Extruders/' } },
@@ -269,18 +277,18 @@ export const Archetype = {
             generic: {
               _: 'Archetype Core/Extruders/[a]_bowden' },
             },
-          fitments: [1],
+          fitments: [1, 2],
         },
-        sherpa_mini: {
-          label: 'Annex Engineering Sherpa Mini',
+        vz_hextrudort_low: {
+          label: 'Vz Hex. Breakneck - Micro-bowden',
           files: {
             generic: {
-              _: 'Archetype Core/Extruders/[a]_flat_sherpa_mini' },
+              _: 'Archetype Core/Extruders/Breakneck Blocks/[a]_microbowden_vz-hextrudort' },
             },
-          fitments: [1],
+          fitments: [1, 2],
         },
         vz_hextrudort: {
-          label: 'Vz Hextrudort',
+          label: 'Vz Hextrudort - Flat-top',
           files: {
             generic: {
               _: 'Archetype Core/Extruders/[a]_flat_vz-hextrudort' },

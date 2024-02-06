@@ -3,7 +3,7 @@ title: Extruders
 ---
 
 ## General BOM
-Each extruder mount requires the following
+Each extruder mount requires the following.
 
  - 2x Square Nut
  - Bowden Tube (if using Breakneck)

@@ -40,9 +40,9 @@ export function Hero () {
         <div>
           <Image src={breakneck} alt="Breakneck" priority height={320} />
         </div>
-        <div>
+        {/* <div>
           <Image src={mantis} alt="Mantis" priority height={320} />
-        </div>
+        </div> */}
         <div>
           <Image src={mjolnir} alt="Mjölnir" priority height={320} />
         </div>

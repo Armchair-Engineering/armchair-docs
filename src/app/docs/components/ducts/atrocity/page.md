@@ -17,7 +17,7 @@ title: Armchair Engineering - Atrocity
 #### Install the fans
 {% figure src="/archetypes/atrocity/archetype_atrocity_ducts_a.png" /%}
 {% figure src="/archetypes/atrocity/archetype_atrocity_ducts_b.png" /%}
-{% figure src="/archetypes/atrocity/archetype_atrocity_ducts_m3x25_a.png" caption="M3x25 SHCS" /%}
+{% figure src="/archetypes/atrocity/archetype_atrocity_ducts_m3x25_a.png" caption="M3x25 FHCS" /%}
 {% figure src="/archetypes/atrocity/archetype_atrocity_ducts_m3x25_b.png" /%}
 
 #### Secure the ducts
