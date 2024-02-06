@@ -11,14 +11,13 @@ Configure your toolhead of choice {% .lead %}
 
 ---
 
-## PDF Version
-
-If you would like to have a PDF version of the documentation click below
-
 ## Full BOM
+
+BOM LINK HERE
 
 ## Build Flow
 
-## TODO
-
-## FAQ
+Assemble your Core onto your rail carriage.  
+Install probe module onto core.  
+Assemble extruder block, hotend block, and duct/fan assemblies.  
+Install all 3 at the same time.  

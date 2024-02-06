@@ -78,10 +78,10 @@ export const navigation = [
             title: 'Breakneck',
             href: '/docs/components/ducts/breakneck',
           },
-          {
-            title: 'Mantis',
-            href: '/docs/components/ducts/mantis',
-          },
+          // {
+          //   title: 'Mantis',
+          //   href: '/docs/components/ducts/mantis',
+          // },
           {
             title: 'Mjölnir',
             href: '/docs/components/ducts/mjolnir',

@@ -20,6 +20,12 @@ I want to give a particularly huge thanks to
 , [Frank.af](https://github.com/kageurufu)
 , [Kyleisah](https://github.com/kyleisah)
 , [tæ](https://github.com/dhazelett)
+, [CloakedWayne](https://github.com/CloakedWayne)
+, BT123
+, Iroh
+, Scarecrow
+, [LukesLaboratory](https://lukeslabonline.com/)
+, Cbon123
 and many others for getting stuck in test printing parts, providing valuable feedback from using the toolhead.
 
 The 3DP community wouldn't be what it is without the contribution and help of individuals like these.
@@ -27,3 +33,5 @@ The 3DP community wouldn't be what it is without the contribution and help of in
 I certainly wouldn't have completed the project to this level of polish without their help.
 
 Huge thanks to all the guys over at the Armchair Engineering, Voron, and Annex discord for all the help and support in bringing this project together.
+
+[PSA](https://www.youtube.com/watch?v=-x-r3T4LB4o)
