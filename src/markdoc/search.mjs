@@ -46,8 +46,6 @@ export default function withSearch (nextConfig = {}) {
 
   return Object.assign({}, nextConfig, {
     webpack (config, options) {
-      console.log(config, options);
-
       config.module.rules.push({
         test: __filename,
         use: [
