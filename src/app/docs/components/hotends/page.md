@@ -27,6 +27,6 @@ individual assembly instructions below, or use the video for generic assembly.
     {% quick-link title="Chube - Waterheater" icon="nozzle" href="/docs/components/hotends/chube" description="Chube - Waterheater" /%}
     {% quick-link title="Goliath" icon="nozzle" href="/docs/components/hotends/goliath" description="VZ - Goliath" /%}
     {% quick-link title="Dragon UHF" icon="nozzle" href="/docs/components/hotends/dragon_uhf" description="Phaetus - Dragon UHF/HF/SF" /%}
-    {% quick-link title="VolcMosq" icon="nozzle" href="/docs/components/hotends/volcmosq" description="VolcMosq / MF Crazy / Mosquito" /%}
+    {% quick-link title="VolcoMosq" icon="nozzle" href="/docs/components/hotends/volcmosq" description="VolcoMosq / NF Crazy / Mosquito" /%}
     {% quick-link title="Rapido" icon="nozzle" href="/docs/components/hotends/rapido_uhf" description="Phaetus - Rapido" /%}
 {% quick-links /%}
