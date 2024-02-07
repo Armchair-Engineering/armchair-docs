@@ -191,6 +191,10 @@ export const Archetype = {
               cover: 'Archetype - Mjolnir/Fan Covers/[a]_mjolnir_fan_cover',
             },
             lengths: {
+              short: {
+                left: 'Archetype - Mjolnir/mjolnir_medium_left',
+                right: 'Archetype - Mjolnir/mjolnir_medium_right',
+              },
               medium: {
                 left: 'Archetype - Mjolnir/mjolnir_medium_left',
                 right: 'Archetype - Mjolnir/mjolnir_medium_right',

@@ -197,7 +197,6 @@ export default function Page () {
                           [name]: component_name
                         });
 
-                        console.log(Archetype.components[name].options[component_name]);
                         if (isset(Archetype.components[name].options[component_name], 'length')) {
                           setLength(Archetype.components[name].options[component_name].length)
                         }
