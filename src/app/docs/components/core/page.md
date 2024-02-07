@@ -50,7 +50,7 @@ Insert 2 M3x16 FHCS with M5 washers on the back to stabilize to the carriage.
 
 ### Hardware
 - 2x Belt tubes
-- 2x M3x45 Belt pins of choice (pin or screw)
+- 2x M3x45 Belt pins of choice (pin or screw) (shown in pictures is an allen key, not required)
 
 ### Video Guide
 Soon™
