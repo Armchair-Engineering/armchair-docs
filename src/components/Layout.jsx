@@ -55,7 +55,7 @@ function Header () {
         <MobileNavigation />
       </div>
       <div className="relative flex flex-grow basis-0 items-center">
-        <Link href="/" aria-label="Home page">
+        <Link href="https://armchairheavyindustries.com/" aria-label="Home page">
           <Logo className="h-9 w-auto fill-slate-700 lg:block dark:fill-sky-100" />
         </Link>
       </div>
