@@ -73,7 +73,7 @@ function Header () {
           <DiscordIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
         </Link>
         <Link
-          href="https://github.com/Armchair-Engineering/Archetype"
+          href="https://github.com/Armchair-Heavy-Industries/Archetype"
           className="group"
           aria-label="Armchair GitHub"
           target="_blank"
