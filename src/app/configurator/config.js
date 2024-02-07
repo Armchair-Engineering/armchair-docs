@@ -161,7 +161,7 @@ export const Archetype = {
           label: 'Breakneck',
           files: {
             generic: {
-              cover: 'Archetype - Breakneck/Front Covers/[a]_breakneck_fan_cover',
+              cover: 'Archetype - Breakneck/Fan Covers/[a]_breakneck_fan_cover',
               adaptor: 'Archetype - Breakneck/removable_hose_attachment',
             },
             lengths: {
