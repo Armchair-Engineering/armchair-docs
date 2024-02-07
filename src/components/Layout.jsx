@@ -55,7 +55,7 @@ function Header () {
         <MobileNavigation />
       </div>
       <div className="relative flex flex-grow basis-0 items-center">
-        <Link href="/" aria-label="Home page">
+        <Link href="https://armchairheavyindustries.com/" aria-label="Home page">
           <Logo className="h-9 w-auto fill-slate-700 lg:block dark:fill-sky-100" />
         </Link>
       </div>
@@ -73,7 +73,7 @@ function Header () {
           <DiscordIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
         </Link>
         <Link
-          href="https://github.com/Armchair-Engineering/Archetype"
+          href="https://github.com/Armchair-Heavy-Industries/Archetype"
           className="group"
           aria-label="Armchair GitHub"
           target="_blank"
