@@ -26,7 +26,7 @@ const tags = {
     render: ({ src, alt = '', caption }) => (
       <figure>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={`/armchair-docs${src}`} alt={alt} />
+        <img src={src} alt={alt} />
         <figcaption>{caption}</figcaption>
       </figure>
     ),
@@ -39,7 +39,7 @@ const tags = {
     },
     render: ({ src }) => (
       <video controls loop>
-        <source src={`/armchair-docs${src}`} type={`video/${src.replace(/.*\.(.*)/g, '$1')}`} />
+        <source src={src} type={`video/${src.replace(/.*\.(.*)/g, '$1')}`} />
       </video>
     ),
   },

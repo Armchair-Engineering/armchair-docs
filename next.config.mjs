@@ -6,7 +6,6 @@ const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
   pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
-  basePath: '/armchair-docs',
   assetPrefix: 'https://docs.armchairheavyindustries.com',
 };
 
