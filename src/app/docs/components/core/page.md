@@ -50,7 +50,7 @@ Insert 2 M3x16 FHCS with M5 washers on the back to stabilize to the carriage.
 
 ### Hardware
 - 2x Belt tubes
-- 2x M3x45 Belt pins of choice (pin or screw)
+- 2x M3x45 Belt pins of choice (pin or screw) (shown in pictures is an allen key, not required)
 
 ### Video Guide
 Soon™
@@ -61,7 +61,7 @@ Your belts should be routed through your gantry at this point, now we're going t
 - Pull your belt through the belt clips.
 - Make a loop and pinch together so that the teeth are locking together.
 - Pull the belt back through the same hole in the clip.
-- Leave enough slack in the previous step, and slide the 4mm OD .tubes through the opening of the loop and through the centre of the clip.
+- Leave enough slack in the previous step, and slide the 4mm OD tubes through the opening of the loop and through the centre of the clip.
 
 {% figure src="/core/core_carriage_belt_clips_tube_a.png" /%}
 {% figure src="/core/core_carriage_belt_clips_tube_b.png" /%}
