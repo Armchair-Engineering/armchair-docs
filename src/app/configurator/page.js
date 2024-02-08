@@ -91,6 +91,11 @@ export default function Page () {
   const [fitment, setFitment] = useState(null);
   const [useSpacer, setUseSpacer] = useState(false);
 
+  const defaultStateClass = 'bg-gray-700';
+  const defaultStateHoverClass = 'hover:bg-gray-800';
+  const selectedItemClass = 'bg-indigo-600';
+  const disabledStateClass = 'bg-gray-400';
+
   // find any components with length restrictions
   useEffect(
     () => {
@@ -101,12 +106,12 @@ export default function Page () {
 
             if (! Archetype.components[value].options[v].lengths.includes(length)) {
               selector.disabled = true
-              selector.classList.add('bg-white/5', 'cursor-not-allowed')
-              selector.classList.remove('bg-white/10', 'hover:bg-white/20')
+              selector.classList.add(disabledStateClass, 'cursor-not-allowed')
+              selector.classList.remove(defaultStateClass, defaultStateHoverClass)
             } else {
               selector.disabled = false
-              selector.classList.add('bg-white/10', 'hover:bg-white/20')
-              selector.classList.remove('bg-white/5', 'cursor-not-allowed')
+              selector.classList.add(defaultStateClass, defaultStateHoverClass)
+              selector.classList.remove(disabledStateClass, 'cursor-not-allowed')
             }
           }
 
@@ -115,12 +120,12 @@ export default function Page () {
 
             if (! Archetype.components[value].options[v].fitments.includes(fitment)) {
               selector.disabled = true
-              selector.classList.add('bg-white/5')
-              selector.classList.remove('bg-white/10', 'hover:bg-white/20')
+              selector.classList.add(disabledStateClass, 'cursor-not-allowed')
+              selector.classList.remove(defaultStateClass, defaultStateHoverClass)
             } else {
               selector.disabled = false
-              selector.classList.add('bg-white/10', 'hover:bg-white/20')
-              selector.classList.remove('bg-white/5')
+              selector.classList.add(defaultStateClass, defaultStateHoverClass)
+              selector.classList.remove(disabledStateClass, 'cursor-not-allowed')
             }
           }
         })
@@ -140,8 +145,8 @@ export default function Page () {
             delete selections[type];
 
             setSelections(selections);
-            selector.classList.remove('border-indigo-600')
-            selector.classList.add('border-transparent')
+            selector.classList.remove(selectedItemClass)
+            selector.classList.add(defaultStateClass)
           }
         })
       })
@@ -188,8 +193,8 @@ export default function Page () {
                       data-component={name}
                       value={component_name}
                       className={clsx(
-                        'rounded-md bg-white/10 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 border',
-                        selections[name] === component_name ? 'border-indigo-600': 'border-transparent',
+                        'rounded-md px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm',
+                        selections[name] === component_name ? selectedItemClass : `${defaultStateClass} ${defaultStateHoverClass}`,
                       )}
                       onClick={() => {
                         setSelections({
@@ -274,7 +279,7 @@ export default function Page () {
             disabled={Object.keys(selections).length !== Object.keys(Archetype.components).length}
             className={clsx(
               'rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm',
-              Object.keys(selections).length !== Object.keys(Archetype.components).length ? 'bg-indigo-950 cursor-not-allowed' : 'bg-indigo-500 hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500'
+              'disabled:cursor-not-allowed disabled:bg-indigo-800 bg-indigo-500 hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500'
             )}
             onClick={() => { download(getSelectedFiles(selections, mods, useSpacer)) }}
           >
@@ -285,7 +290,7 @@ export default function Page () {
             disabled={Object.keys(selections).length === 0}
             className={clsx(
               'rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm',
-              Object.keys(selections).length === 0 ? 'bg-gray-800 cursor-not-allowed' : 'bg-gray-700 hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700'
+              'disabled:cursor-not-allowed disabled:bg-gray-400 bg-gray-700 hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700'
             )}
             onClick={() => { setSelections({}); setMods({}); setFitment({}); setLength({}); }}
           >
