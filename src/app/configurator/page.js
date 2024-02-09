@@ -23,7 +23,7 @@ const getLength = (length) => {
   }
 }
 
-const BASE_URI = 'https://raw.githubusercontent.com/Armchair-Engineering/Archetype/main'
+const BASE_URI = 'https://raw.githubusercontent.com/Armchair-Heavy-Industries/Archetype/main'
 
 const getSelectedFiles = (selections, mods, useSpacer) => {
   const files = []
