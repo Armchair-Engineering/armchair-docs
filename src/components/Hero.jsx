@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import clsx from 'clsx';
 
-// import atrocity from '../../public/atrocity.png';
-// import blackbird from '../../public/blackbird.png';
-// import breakneck from '../../public/breakneck.png';
-// import mantis from '../../public/mantis.png';
-// import mjolnir from '../../public/mjolnir.png';
-// import zephyr from '../../public/zephyr.png';
+// import atrocity from '../../public/archetype/atrocity.png';
+// import blackbird from '../../public/archetype/blackbird.png';
+// import breakneck from '../../public/archetype/breakneck.png';
+// import mantis from '../../public/archetype/mantis.png';
+// import mjolnir from '../../public/archetype/mjolnir.png';
+// import zephyr from '../../public/archetype/zephyr.png';
 
 const gradient = `linear-gradient(
   90deg,
