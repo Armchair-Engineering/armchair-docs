@@ -6,7 +6,7 @@ const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
   pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
-  assetPrefix: 'https://docs.armchairheavyindustries.com',
+  assetPrefix: '',
 };
 
 export default withSearch(
