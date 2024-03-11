@@ -196,8 +196,8 @@ export const Archetype = {
                 right: 'Archetype - Mjolnir/mjolnir_medium_right',
               },
               medium: {
-                left: 'Archetype - Mjolnir/mjolnir_medium_left',
-                right: 'Archetype - Mjolnir/mjolnir_medium_right',
+                left: 'Archetype - Mjolnir/mjolnir_long_left',
+                right: 'Archetype - Mjolnir/mjolnir_long_right',
               },
               long: {
                 left: 'Archetype - Mjolnir/mjolnir_long_left',

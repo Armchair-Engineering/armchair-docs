@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import clsx from 'clsx';
-import { navigation } from '@/lib/navigation';
-import { Fragment } from 'react';
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import clsx from 'clsx'
+import { navigation } from '@/lib/navigation'
+import { Fragment } from 'react'
 
-function NavigationLink ({ link, onLinkClick, active, dot }) {
+function NavigationLink({ link, onLinkClick, active, dot }) {
   return (
     <Link
       href={link.href}
@@ -17,18 +17,16 @@ function NavigationLink ({ link, onLinkClick, active, dot }) {
         dot
           ? 'before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full'
           : '',
-        active && dot
-          ? 'before:bg-sky-500'
-          : '',
+        active && dot ? 'before:bg-sky-500' : '',
       )}
     >
       {link.title}
     </Link>
-  );
+  )
 }
 
-export function Navigation ({ className, onLinkClick }) {
-  let pathname = usePathname();
+export function Navigation({ className, onLinkClick }) {
+  let pathname = usePathname()
 
   return (
     <nav className={clsx('text-base lg:text-sm', className)}>
@@ -53,20 +51,43 @@ export function Navigation ({ className, onLinkClick }) {
                     />
                   </li>
 
-                  {link.links && link.links.length && <ul role="list" className="ml-4 mt-2 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800">
-                    {link.links && link.links.map((sub) => (
-                      <li
-                        key={sub.href}
-                      >
-                        <NavigationLink
-                          link={sub}
-                          onLinkClick={onLinkClick}
-                          active={sub.href === pathname}
-                          dot={false}
-                        />
-                      </li>
-                    ))}
-                  </ul>}
+                  {link.links && link.links.length && (
+                    <ul
+                      role="list"
+                      className="ml-4 mt-2 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800"
+                    >
+                      {link.links &&
+                        link.links.map((sub) => (
+                          <li key={sub.href}>
+                            <NavigationLink
+                              link={sub}
+                              onLinkClick={onLinkClick}
+                              active={sub.href === pathname}
+                              dot={false}
+                            />
+
+                            {sub.links && sub.links.length && (
+                              <ul
+                                role="list"
+                                className="ml-4 mt-2 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800"
+                              >
+                                {sub.links &&
+                                  sub.links.map((sub2) => (
+                                    <li key={sub2.href}>
+                                      <NavigationLink
+                                        link={sub2}
+                                        onLinkClick={onLinkClick}
+                                        active={sub2.href === pathname}
+                                        dot={false}
+                                      />
+                                    </li>
+                                  ))}
+                              </ul>
+                            )}
+                          </li>
+                        ))}
+                    </ul>
+                  )}
                 </Fragment>
               ))}
             </ul>
@@ -74,5 +95,5 @@ export function Navigation ({ className, onLinkClick }) {
         ))}
       </ul>
     </nav>
-  );
+  )
 }
