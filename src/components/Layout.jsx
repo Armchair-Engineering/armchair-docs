@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
-import { Hero } from '@/components/Hero';
+import { ArmchairHero, ArchetypeHero } from '@/components/Hero';
 import { Logo } from '@/components/Logo';
 import { MobileNavigation } from '@/components/MobileNavigation';
 import { Navigation } from '@/components/Navigation';
@@ -73,7 +73,7 @@ function Header () {
           <DiscordIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
         </Link>
         <Link
-          href="https://github.com/Armchair-Heavy-Industries/Archetype"
+          href="https://github.com/Armchair-Heavy-Industries"
           className="group"
           aria-label="Armchair GitHub"
           target="_blank"
@@ -93,7 +93,8 @@ export function Layout ({ children }) {
     <div className="flex w-full flex-col">
       <Header />
 
-      {isArcheType && <Hero />}
+      {isHomePage && <ArmchairHero />}
+      {isArcheType && <ArchetypeHero />}
 
       <div className="relative mx-auto flex w-full max-w-8xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
