@@ -19,7 +19,6 @@ export const navigation = [
         title: 'Escapement',
         href: 'https://github.com/Armchair-Heavy-Industries/Escapement',
       },
-
       {
         title: 'Sharketype',
         href: 'https://github.com/Armchair-Heavy-Industries/Sharketype',
