@@ -5,7 +5,7 @@ title: Getting started
 Configure your toolhead of choice {% .lead %}
 
 {% quick-links %}
-  {% quick-link title="Configurator" icon="presets" href="/configurator" description="Generate your parts list for printing" /%}
+  {% quick-link title="Configurator" icon="presets" href="/configurator/archetype" description="Generate your parts list for printing" /%}
 {% /quick-links %}
 
 Once you have chosen your desired configuration, follow the Installation guide below {% .lead %}
