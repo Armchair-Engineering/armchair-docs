@@ -26,3 +26,8 @@ Assemble your Core onto your rail carriage.
 Install probe module onto core.
 Assemble extruder block, hotend block, and duct/fan assemblies.
 Install all 3 at the same time.
+
+
+{% quick-links %}
+  {% quick-link title="User Mods" icon="lightbulb" href="https://github.com/Armchair-Heavy-Industries/Armchair-Usermods/tree/main/files/Archetype" description="Looking for more Archetype? Check here for user creations/mods." /%}
+{% /quick-links %}
