@@ -17,3 +17,9 @@
   {% quick-link title="Escapement" icon="installation" href="https://github.com/Armchair-Heavy-Industries/Escapement" description="Gallileo 2 rehousing native fit for Archetype, Xol and others" /%}
   {% quick-link title="Sharketype" icon="installation" href="https://github.com/Armchair-Heavy-Industries/Sharketype" description="A BMG based spur gear extruder designed to fit natively on the Archetype toolhead ecosystem" /%}
 {% /quick-links %}
+
+# Mods
+
+{% quick-links %}
+  {% quick-link title="Trailhead" icon="presets" href="/docs/trailhead" description="Trailhead XY for your 2.4/Trident" /%}
+{% /quick-links %}
