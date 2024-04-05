@@ -86,14 +86,13 @@ function Header () {
 }
 
 export function Layout ({ children }) {
-  const isHomePage = usePathname() === '/';
   const isArcheType = usePathname().startsWith('/docs/archetype');
 
   return (
     <div className="flex w-full flex-col">
       <Header />
 
-      {isHomePage && <ArmchairHero />}
+      {!isArcheType && <ArmchairHero />}
       {isArcheType && <ArchetypeHero />}
 
       <div className="relative mx-auto flex w-full max-w-8xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12">

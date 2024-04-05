@@ -4,11 +4,12 @@ import clsx from 'clsx'
 import { navigation } from '@/lib/navigation'
 import { Fragment } from 'react'
 
-function NavigationLink({ link, onLinkClick, active, dot }) {
+function NavigationLink({ link, onLinkClick, active, dot, target}) {
   return (
     <Link
       href={link.href}
       onClick={onLinkClick}
+      target={target}
       className={clsx(
         'block w-full pl-3.5',
         active
@@ -48,10 +49,10 @@ export function Navigation({ className, onLinkClick }) {
                       onLinkClick={onLinkClick}
                       active={link.href === pathname}
                       dot={true}
+                      target={link.target}
                     />
                   </li>
-
-                  {link.links && link.links.length && (
+                  {link.links && link.links.length && pathname.startsWith(link.href) && (
                     <ul
                       role="list"
                       className="ml-4 mt-2 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800"
@@ -66,7 +67,7 @@ export function Navigation({ className, onLinkClick }) {
                               dot={false}
                             />
 
-                            {sub.links && sub.links.length && (
+                            {sub.links && sub.links.length && pathname.startsWith(sub.href) && (
                               <ul
                                 role="list"
                                 className="ml-4 mt-2 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800"

@@ -10,30 +10,41 @@ export const navigation = [
       {
         title: 'Xol Toolhead',
         href: 'https://github.com/Armchair-Heavy-Industries/Xol-Toolhead',
+        target: '_blank',
       },
       {
         title: 'P-REXZ',
         href: 'https://github.com/Armchair-Heavy-Industries/P-REXZ',
+        target: '_blank',
       },
       {
         title: 'Escapement',
         href: 'https://github.com/Armchair-Heavy-Industries/Escapement',
+        target: '_blank',
       },
       {
         title: 'Sharketype',
         href: 'https://github.com/Armchair-Heavy-Industries/Sharketype',
+        target: '_blank',
       },
       {
         title: 'Trailhead XY Joints',
-        href: "#",
+        href: '/docs/trailhead',
         links: [
-          { title: 'Github', href: 'https://github.com/Armchair-Heavy-Industries/Trailhead-XY-Joints'},
-          { title: 'Configurator', href: '/configurator/trailhead' }
+          {
+            title: 'Github',
+            href: 'https://github.com/Armchair-Heavy-Industries/Trailhead-XY-Joints',
+            target: '_blank',
+          },
+          {
+            title: 'Configurator',
+            href: '/configurator/trailhead',
+          },
         ],
       },
       {
         title: 'Archetype',
-        href: "/docs/archetype",
+        href: '/docs/archetype',
         links: [
           { title: 'Core', href: '/docs/archetype/components/core' },
           { title: 'Probes', href: '/docs/archetype/components/probes' },
@@ -93,7 +104,6 @@ export const navigation = [
             title: 'Ducts',
             href: '/docs/archetype/components/ducts',
             links: [
-              { title: 'Getting started', href: '/docs/archetype' },
               {
                 title: 'Atrocity',
                 href: '/docs/archetype/components/ducts/atrocity',
@@ -121,19 +131,19 @@ export const navigation = [
             ],
           },
           { title: 'Configurator', href: '/configurator/archetype' },
-        ],
-      },
-      {
-        title: 'Contributing',
-        href: "#",
-        links: [
           {
-            title: 'How to contribute',
-            href: '/docs/archetype/how-to-contribute',
-          },
-          {
-            title: 'Acknowledgements',
-            href: '/docs/archetype/acknowledgements',
+            title: 'Contributing',
+            href: '#',
+            links: [
+              {
+                title: 'How to contribute',
+                href: '/docs/archetype/how-to-contribute',
+              },
+              {
+                title: 'Acknowledgements',
+                href: '/docs/archetype/acknowledgements',
+              },
+            ],
           },
         ],
       },
