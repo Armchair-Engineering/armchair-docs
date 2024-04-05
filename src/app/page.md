@@ -1,28 +1,25 @@
----
-title: Getting started
----
-
-Configure your toolhead of choice {% .lead %}
+# Printers
 
 {% quick-links %}
-  {% quick-link title="Configurator" icon="presets" href="/configurator" description="Generate your parts list for printing" /%}  
+  {% quick-link title="P-REXZ" icon="presets" href="https://github.com/Armchair-Heavy-Industries/P-REXZ" description="A Polar Printer, because why not?" /%}
 {% /quick-links %}
 
-Once you have chosen your desired configuration, follow the Installation guide below {% .lead %}
+# Toolheads
 
 {% quick-links %}
-  {% quick-link title="Installation" icon="installation" href="/docs/components/core" description="Step-by-step guides to installing your Archetype" /%}
+  {% quick-link title="Xol-Toolhead" icon="installation" href="https://github.com/Armchair-Heavy-Industries/Xol-Toolhead" description="Xol Toolhead" /%}
+  {% quick-link title="Archetype" icon="installation" href="/docs/archetype" description="You wanted fan options?" /%}
 {% /quick-links %}
 
----
+# Extruders
 
-## Full BOM
+{% quick-links %}
+  {% quick-link title="Escapement" icon="installation" href="https://github.com/Armchair-Heavy-Industries/Escapement" description="Gallileo 2 rehousing native fit for Archetype, Xol and others" /%}
+  {% quick-link title="Sharketype" icon="installation" href="https://github.com/Armchair-Heavy-Industries/Sharketype" description="A BMG based spur gear extruder designed to fit natively on the Archetype toolhead ecosystem" /%}
+{% /quick-links %}
 
-You can find the latest BOM [HERE](https://docs.google.com/spreadsheets/d/18x7pNYz53fPJomdPaFnqmAoJtb4nF-udBhEBqGI2xig/edit?usp=sharing)
+# Mods
 
-## Build Flow
-
-Assemble your Core onto your rail carriage.  
-Install probe module onto core.  
-Assemble extruder block, hotend block, and duct/fan assemblies.  
-Install all 3 at the same time.  
+{% quick-links %}
+  {% quick-link title="Trailhead" icon="presets" href="/docs/trailhead" description="Trailhead XY for your 2.4/Trident" /%}
+{% /quick-links %}

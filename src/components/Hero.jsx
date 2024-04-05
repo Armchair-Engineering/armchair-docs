@@ -1,12 +1,4 @@
-import Image from 'next/image';
-import clsx from 'clsx';
-
-// import atrocity from '../../public/atrocity.png';
-// import blackbird from '../../public/blackbird.png';
-// import breakneck from '../../public/breakneck.png';
-// import mantis from '../../public/mantis.png';
-// import mjolnir from '../../public/mjolnir.png';
-// import zephyr from '../../public/zephyr.png';
+import clsx from 'clsx'
 
 const gradient = `linear-gradient(
   90deg,
@@ -21,41 +13,35 @@ const gradient = `linear-gradient(
   hsl(42deg 100% 50%) 80%,
   hsl(51deg 100% 50%) 90%,
   hsl(60deg 100% 50%) 100%
-)`;
+)`
 
-
-export function Hero () {
+export function ArmchairHero() {
   return (
     <div className={clsx('flex flex-col gap-8')}>
-      <div className={clsx('w-full text-center lg:text-9xl text-7xl')}>
+      <div className={clsx('w-full text-center text-7xl lg:text-9xl')}>
+        <h1 className={clsx('font-heading')}>Armchair</h1>
+      </div>
+      <div
+        className={clsx('flex flex-row items-center justify-between gap-4')}
+      ></div>
+      <div className={clsx('h-4')} style={{ backgroundImage: gradient }}></div>
+      <div className={clsx('w-full text-center text-4xl lg:text-5xl')}>
+        <h2 className="font-heading">Our Projects</h2>
+      </div>
+    </div>
+  )
+}
+
+export function ArchetypeHero() {
+  return (
+    <div className={clsx('flex flex-col gap-8')}>
+      <div className={clsx('w-full text-center text-7xl lg:text-9xl')}>
         <h1 className={clsx('font-heading')}>Archetype</h1>
       </div>
-      {/*<div className={clsx('flex flex-row items-center gap-4 justify-between')}>
-        <div>
-          <Image src={atrocity} alt="Atrocity" priority height={320} />
-        </div>
-        <div>
-          <Image src={blackbird} alt="Blackbird" priority height={320} />
-        </div>
-        <div>
-          <Image src={breakneck} alt="Breakneck" priority height={320} />
-        </div>*/}
-        {/* <div>
-          <Image src={mantis} alt="Mantis" priority height={320} />
-        </div> */}
-       {/* <div>
-          <Image src={mjolnir} alt="Mjölnir" priority height={320} />
-        </div>
-        <div>
-          <Image src={zephyr} alt="Zephyr" priority height={320} />
-        </div>
-      </div>*/}
-      <div className={clsx('h-4')} style={{ backgroundImage: gradient }}>
-
-      </div>
-      <div className={clsx('w-full text-center lg:text-5xl text-4xl')}>
+      <div className={clsx('h-4')} style={{ backgroundImage: gradient }}></div>
+      <div className={clsx('w-full text-center text-4xl lg:text-5xl')}>
         <h2 className="font-heading">You wanted fan options?</h2>
       </div>
     </div>
-  );
+  )
 }

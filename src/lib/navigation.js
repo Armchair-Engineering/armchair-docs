@@ -1,110 +1,152 @@
 export const navigation = [
   {
-    title: 'Introduction',
-    links: [
-      { title: 'Getting started', href: '/' },
-    ],
+    title: 'Armchair Heavy Industries',
+    href: '#',
+    links: [{ title: 'Daily dose of atrocity', href: '/' }],
   },
   {
-    title: 'Components',
+    title: 'Projects',
     links: [
-      { title: 'Core', href: '/docs/components/core' },
-      { title: 'Probes', href: '/docs/components/probes' },
       {
-        title: 'Hotends',
-        href: '/docs/components/hotends',
+        title: 'Xol Toolhead',
+        href: 'https://github.com/Armchair-Heavy-Industries/Xol-Toolhead',
+        target: '_blank',
+      },
+      {
+        title: 'P-REXZ',
+        href: 'https://github.com/Armchair-Heavy-Industries/P-REXZ',
+        target: '_blank',
+      },
+      {
+        title: 'Escapement',
+        href: 'https://github.com/Armchair-Heavy-Industries/Escapement',
+        target: '_blank',
+      },
+      {
+        title: 'Sharketype',
+        href: 'https://github.com/Armchair-Heavy-Industries/Sharketype',
+        target: '_blank',
+      },
+      {
+        title: 'Trailhead XY Joints',
+        href: '/docs/trailhead',
         links: [
           {
-            title: 'Chube',
-            href: '/docs/components/hotends/chube',
+            title: 'Github',
+            href: 'https://github.com/Armchair-Heavy-Industries/Trailhead-XY-Joints',
+            target: '_blank',
           },
           {
-            title: 'Goliath',
-            href: '/docs/components/hotends/goliath',
-          },
-          {
-            title: 'Dragon UHF',
-            href: '/docs/components/hotends/dragon_uhf',
-          },
-          {
-            title: 'VolcMosq / NF Crazy / Mosquito',
-            href: '/docs/components/hotends/volcmosq',
-          },
-          {
-            title: 'Rapido',
-            href: '/docs/components/hotends/rapido_uhf',
+            title: 'Configurator',
+            href: '/configurator/trailhead',
           },
         ],
       },
       {
-        title: 'Extruders',
-        href: '/docs/components/extruders',
+        title: 'Archetype',
+        href: '/docs/archetype',
         links: [
+          { title: 'Core', href: '/docs/archetype/components/core' },
+          { title: 'Probes', href: '/docs/archetype/components/probes' },
           {
-            title: 'Bowden',
-            href: '/docs/components/extruders/bowden',
+            title: 'Hotends',
+            href: '/docs/archetype/components/hotends',
+            links: [
+              {
+                title: 'Chube',
+                href: '/docs/archetype/components/hotends/chube',
+              },
+              {
+                title: 'Goliath',
+                href: '/docs/archetype/components/hotends/goliath',
+              },
+              {
+                title: 'Dragon UHF',
+                href: '/docs/archetype/components/hotends/dragon_uhf',
+              },
+              {
+                title: 'VolcMosq / NF Crazy / Mosquito',
+                href: '/docs/archetype/components/hotends/volcmosq',
+              },
+              {
+                title: 'Rapido',
+                href: '/docs/archetype/components/hotends/rapido_uhf',
+              },
+            ],
           },
           {
-            title: 'Orbiter 2',
-            href: '/docs/components/extruders/orbiter2',
+            title: 'Extruders',
+            href: '/docs/archetype/components/extruders',
+            links: [
+              {
+                title: 'Bowden',
+                href: '/docs/archetype/components/extruders/bowden',
+              },
+              {
+                title: 'Orbiter 2',
+                href: '/docs/archetype/components/extruders/orbiter2',
+              },
+              {
+                title: 'Sherpa Micro',
+                href: '/docs/archetype/components/extruders/sherpa_micro',
+              },
+              {
+                title: 'Sherpa Mini',
+                href: '/docs/archetype/components/extruders/sherpa_mini',
+              },
+              {
+                title: 'VZ HextrudORT',
+                href: '/docs/archetype/components/extruders/vz_hextrudort',
+              },
+            ],
           },
           {
-            title: 'Sherpa Micro',
-            href: '/docs/components/extruders/sherpa_micro',
+            title: 'Ducts',
+            href: '/docs/archetype/components/ducts',
+            links: [
+              {
+                title: 'Atrocity',
+                href: '/docs/archetype/components/ducts/atrocity',
+              },
+              {
+                title: 'Blackbird',
+                href: '/docs/archetype/components/ducts/blackbird',
+              },
+              {
+                title: 'Breakneck',
+                href: '/docs/archetype/components/ducts/breakneck',
+              },
+              // {
+              //   title: 'Mantis',
+              //   href: '/docs/archetype/components/ducts/mantis',
+              // },
+              {
+                title: 'Mjölnir',
+                href: '/docs/archetype/components/ducts/mjolnir',
+              },
+              // {
+              //   title: 'Zephyr',
+              //   href: '/docs/archetype/components/ducts/Zephyr',
+              // },
+            ],
           },
+          { title: 'Configurator', href: '/configurator/archetype' },
           {
-            title: 'Sherpa Mini',
-            href: '/docs/components/extruders/sherpa_mini',
-          },
-          {
-            title: 'VZ HextrudORT',
-            href: '/docs/components/extruders/vz_hextrudort',
+            title: 'Contributing',
+            href: '#',
+            links: [
+              {
+                title: 'How to contribute',
+                href: '/docs/archetype/how-to-contribute',
+              },
+              {
+                title: 'Acknowledgements',
+                href: '/docs/archetype/acknowledgements',
+              },
+            ],
           },
         ],
       },
-      {
-        title: 'Ducts',
-        href: '/docs/components/ducts',
-        links: [
-          {
-            title: 'Atrocity',
-            href: '/docs/components/ducts/atrocity',
-          },
-          {
-            title: 'Blackbird',
-            href: '/docs/components/ducts/blackbird',
-          },
-          {
-            title: 'Breakneck',
-            href: '/docs/components/ducts/breakneck',
-          },
-          // {
-          //   title: 'Mantis',
-          //   href: '/docs/components/ducts/mantis',
-          // },
-          {
-            title: 'Mjölnir',
-            href: '/docs/components/ducts/mjolnir',
-          },
-          // {
-          //   title: 'Zephyr',
-          //   href: '/docs/components/ducts/Zephyr',
-          // },
-        ],
-      },
     ],
   },
-  {
-    title: 'Configurator',
-    links: [
-      { title: 'Configurator', href: '/configurator' }
-    ],
-  },
-  {
-    title: 'Contributing',
-    links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Acknowledgements', href: '/docs/acknowledgements' },
-    ],
-  },
-];
+]
