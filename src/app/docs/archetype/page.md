@@ -11,7 +11,7 @@ Configure your toolhead of choice {% .lead %}
 Once you have chosen your desired configuration, follow the Installation guide below {% .lead %}
 
 {% quick-links %}
-  {% quick-link title="Installation" icon="installation" href="/docs/components/core" description="Step-by-step guides to installing your Archetype" /%}
+  {% quick-link title="Installation" icon="installation" href="/docs/archetype/components/core" description="Step-by-step guides to installing your Archetype" /%}
 {% /quick-links %}
 
 ---
